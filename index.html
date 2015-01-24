@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jasper's Calendar</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <h1>Jasper's Calendar</h1>
+  <div id="calendar"></div>
+
+  <script src="scripts/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="scripts/bower_components/jquery-ui/jquery-ui.min.js"></script>
+  <script>
+    $('#calendar').datepicker({
+      inline: true,
+      firstDay: 1,
+      showOtherMonths: true,
+      dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+    });
+  </script>
+</body>
+
+</html>
